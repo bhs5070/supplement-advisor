@@ -1,0 +1,51 @@
+flowchart TB
+    USER["사용자<br/>회원 · 비회원"]
+    FE["① Frontend<br/>React + TypeScript + Vite"]
+    AUTH["③ Clerk<br/>회원가입 · 로그인"]
+    API["② FastAPI<br/>입력 검증 · 접근 권한<br/>분석 접수 · 상태 및 결과 조회"]
+    QUEUE["④ Redis<br/>분석 작업 큐"]
+
+    USER <--> FE
+    FE <-->|회원 로그인| AUTH
+    FE <-->|제품 URL · 건강정보 · 추가 입력<br/>진행 상황 · 결과| API
+    AUTH -.->|회원 인증 검증| API
+    API -->|분석 작업 등록| QUEUE
+
+    subgraph WORKER["④ Celery Worker"]
+        RUN["⑤ LangGraph<br/>기능별 실행 · 상태 관리<br/>시간 · 호출 · 재조사 한도 적용"]
+        SUP["Supervisor Agent<br/>조사 계획 · 호출 대상 선택<br/>근거 검토 · 재조사 · 종료 판단"]
+        EXPERT["제품 검증 전문 Agent 5개<br/>① 성분·함량·표시 정보<br/>② 기능성 근거와 광고의 부합<br/>③ 개인 목적과의 적합성<br/>④ 안전성과 주의사항<br/>⑤ 공식 정보와 품질 검증"]
+        NUTRI["영양소 안내 Agent<br/>입력 확인 · 필요한 추가 질문<br/>영양소와 효과·근거·주의사항 안내"]
+        RESULT["기능별 결과 생성<br/>제품 평가 또는 영양소 안내"]
+
+        RUN -->|제품 검증| SUP
+        SUP -->|선택적 호출 · 조사 지시| EXPERT
+        EXPERT -->|조사 결과 · 근거 · 미확인 사항| SUP
+        SUP -->|판정 완료| RESULT
+
+        RUN -->|영양소 안내| NUTRI
+        NUTRI --> RESULT
+    end
+
+    QUEUE --> RUN
+
+    MODEL["⑥ OpenAI GPT-5.6 Luna<br/>모든 Agent의 추론 · 이미지 판독"]
+    FETCH["⑦-1 HTTPX<br/>HTML · 이미지 수집"]
+    SEARCH["⑦-3 Tavily Search<br/>추가 자료 검색"]
+    EVIDENCE["⑦-3 근거 출처<br/>식약처·식품안전나라 API 및 공식 문서<br/>PubMed · Europe PMC · NIH ODS"]
+
+    RUN <-->|모델 호출| MODEL
+    RUN <-->|수집 도구| FETCH
+    RUN <-->|검색 도구| SEARCH
+    RUN <-->|공식 정보 · 논문 조회| EVIDENCE
+
+    DB[("⑧ PostgreSQL<br/>사용자 · 제품 · 성분<br/>분석 결과 · 인용 근거<br/>실행 상태 · LangGraph 체크포인트")]
+    FILES["⑨ 파일 저장소<br/>로컬: Docker 볼륨<br/>외부 배포: Cloudflare R2"]
+    OBS["⑩ LangSmith Developer<br/>실행 추적 · 오류 · 시간 · 비용<br/>데이터셋 · 평가 · 비교 실험"]
+
+    API <--> DB
+    RUN <-->|상태 저장 · 복구에 활용| DB
+    RESULT -->|최종 결과 저장| DB
+    API <-->|파일 등록 · 접근 관리| FILES
+    RUN <-->|이미지 · 문서 원본| FILES
+    RUN -.->|실행 기록 · 평가 결과| OBS

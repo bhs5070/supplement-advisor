@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Codex: 팀 구현 이어가기",
+      "type": "process",
+      "command": "bash",
+      "args": ["${workspaceFolder}/scripts/start-codex.sh"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "presentation": {"reveal": "always", "panel": "dedicated", "focus": true},
+      "problemMatcher": []
+    },
+    {
+      "label": "Codex: 시작 환경 확인",
+      "type": "process",
+      "command": "bash",
+      "args": ["${workspaceFolder}/scripts/start-codex.sh", "--check"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "problemMatcher": []
+    }
+  ]
+}

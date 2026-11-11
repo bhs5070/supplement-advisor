@@ -1,0 +1,788 @@
+{
+  "version": "m1-fixed-20-annotated-v2",
+  "frozen_at": "2026-11-10T16:10:53.551679+00:00",
+  "sampling_method": "Convenience sample selected from primary vendor catalogs and retailer product search links before evaluation; not market representative.",
+  "sites": [
+    {
+      "id": "ckd",
+      "domain": "ckdhc.com"
+    },
+    {
+      "id": "kgc",
+      "domain": "jungkwanjang.kr"
+    },
+    {
+      "id": "er_hana",
+      "domain": "er-hana.com"
+    },
+    {
+      "id": "ssg",
+      "domain": "ssg.com"
+    },
+    {
+      "id": "gs",
+      "domain": "gsshop.com"
+    }
+  ],
+  "samples": [
+    {
+      "id": "ckd-284",
+      "site_id": "ckd",
+      "url": "https://www.ckdhc.com/product/productView.do?prodCode=CHC0000284",
+      "expected_display_name": "락토핏 골드 17포",
+      "discovery_url": "https://www.ckdhc.com/product/productList.do?category=CKD_CATE00000007&r=CKD_CATE00000001",
+      "cohort": "regression_seed",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "known",
+            "values": [
+              "락토핏 골드 17포"
+            ]
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "not_in_page",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      },
+      "label_provenance": {
+        "type": "manual_primary_visible_text_review_before_model_measurement",
+        "source_sha256": "c856f3e5889d1aa5e85456c8c1b2333afb989949eca3c07a271892f0fcc295dc",
+        "collected_at": "2026-11-10T16:06:32.383760+00:00",
+        "source_url": "https://www.ckdhc.com/product/productView.do?prodCode=CHC0000284",
+        "observations_file": "work/verification/2026-11-11-stage0-observation-notes.json",
+        "scope": "Collector-visible HTML text only; image content was not labelled. Footer company alone does not establish manufacturer. Registration no-result is never used as a negative label."
+      }
+    },
+    {
+      "id": "ckd-10",
+      "site_id": "ckd",
+      "url": "https://www.ckdhc.com/product/productView.do?prodCode=CHC0000010",
+      "expected_display_name": "락토핏 골드",
+      "discovery_url": "https://www.ckdhc.com/product/productList.do?category=CKD_CATE00000007&r=CKD_CATE00000001",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "known",
+            "values": [
+              "락토핏 골드"
+            ]
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "not_in_page",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      },
+      "label_provenance": {
+        "type": "manual_primary_visible_text_review_before_model_measurement",
+        "source_sha256": "ae5196413eb7c37983b855f760c5ed3cfe274e61864dbf49d913f1c7271c952a",
+        "collected_at": "2026-11-10T16:06:32.876939+00:00",
+        "source_url": "https://www.ckdhc.com/product/productView.do?prodCode=CHC0000010",
+        "observations_file": "work/verification/2026-11-11-stage0-observation-notes.json",
+        "scope": "Collector-visible HTML text only; image content was not labelled. Footer company alone does not establish manufacturer. Registration no-result is never used as a negative label."
+      }
+    },
+    {
+      "id": "ckd-59",
+      "site_id": "ckd",
+      "url": "https://www.ckdhc.com/product/productView.do?prodCode=CHC0000059",
+      "expected_display_name": "프로메가 알티지 오메가3 듀얼",
+      "discovery_url": "https://www.ckdhc.com/product/productList.do?category=CKD_CATE00000008&r=CKD_CATE00000001",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "known",
+            "values": [
+              "프로메가 알티지 오메가3 듀얼"
+            ]
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "not_in_page",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      },
+      "label_provenance": {
+        "type": "manual_primary_visible_text_review_before_model_measurement",
+        "source_sha256": "29ef00b9709b21dba8f4efa6508123de751cba7ce61d314b8fbc1029b4fe8102",
+        "collected_at": "2026-11-10T16:06:33.221331+00:00",
+        "source_url": "https://www.ckdhc.com/product/productView.do?prodCode=CHC0000059",
+        "observations_file": "work/verification/2026-11-11-stage0-observation-notes.json",
+        "scope": "Collector-visible HTML text only; image content was not labelled. Footer company alone does not establish manufacturer. Registration no-result is never used as a negative label."
+      }
+    },
+    {
+      "id": "ckd-6",
+      "site_id": "ckd",
+      "url": "https://www.ckdhc.com/product/productView.do?prodCode=CHC0000006",
+      "expected_display_name": "아이클리어",
+      "discovery_url": "https://www.ckdhc.com/product/productList.do?category=CKD_CATE00000009&r=CKD_CATE00000001",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "known",
+            "values": [
+              "아이클리어 루테인"
+            ]
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "not_in_page",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      },
+      "label_provenance": {
+        "type": "manual_primary_visible_text_review_before_model_measurement",
+        "source_sha256": "c4324aacc2df65eceaa4ed5ff0c1320ce94ccc3f7bf526396aff22d9ed4c8708",
+        "collected_at": "2026-11-10T16:06:33.657753+00:00",
+        "source_url": "https://www.ckdhc.com/product/productView.do?prodCode=CHC0000006",
+        "observations_file": "work/verification/2026-11-11-stage0-observation-notes.json",
+        "scope": "Collector-visible HTML text only; image content was not labelled. Footer company alone does not establish manufacturer. Registration no-result is never used as a negative label."
+      }
+    },
+    {
+      "id": "ckd-35",
+      "site_id": "ckd",
+      "url": "https://www.ckdhc.com/product/productView.do?prodCode=CHC0000035",
+      "expected_display_name": "종근당건강 칼슘마그네슘",
+      "discovery_url": "https://www.ckdhc.com/product/productView.do?prodCode=CHC0000035",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "known",
+            "values": [
+              "종근당건강 칼슘마그네슘"
+            ]
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "not_in_page",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      },
+      "label_provenance": {
+        "type": "manual_primary_visible_text_review_before_model_measurement",
+        "source_sha256": "5ace362c47cb431dae442beb713595750414322f0ccbfff48a0f64963104a1fd",
+        "collected_at": "2026-11-10T16:06:33.963849+00:00",
+        "source_url": "https://www.ckdhc.com/product/productView.do?prodCode=CHC0000035",
+        "observations_file": "work/verification/2026-11-11-stage0-observation-notes.json",
+        "scope": "Collector-visible HTML text only; image content was not labelled. Footer company alone does not establish manufacturer. Registration no-result is never used as a negative label."
+      }
+    },
+    {
+      "id": "kgc-1560",
+      "site_id": "kgc",
+      "url": "https://jungkwanjang.kr/products/view.do?id=1560&ref_id=1077",
+      "expected_display_name": "에브리타임 샷",
+      "discovery_url": "https://jungkwanjang.kr/products/view.do?id=1560&ref_id=1077",
+      "cohort": "regression_seed",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "known",
+            "values": [
+              "에브리타임 샷"
+            ]
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "not_in_page",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      },
+      "label_provenance": {
+        "type": "manual_primary_visible_text_review_before_model_measurement",
+        "source_sha256": "890085f44a9775f35161689f949f3c72953e6a5f0f9a65b363aaf43f069433cb",
+        "collected_at": "2026-11-10T16:06:34.288119+00:00",
+        "source_url": "https://jungkwanjang.kr/products/view.do?id=1560&ref_id=1077",
+        "observations_file": "work/verification/2026-11-11-stage0-observation-notes.json",
+        "scope": "Collector-visible HTML text only; image content was not labelled. Footer company alone does not establish manufacturer. Registration no-result is never used as a negative label."
+      }
+    },
+    {
+      "id": "kgc-1652",
+      "site_id": "kgc",
+      "url": "https://jungkwanjang.kr/products/view.do?id=1652&ref_id=1119",
+      "expected_display_name": "에브리타임샷스트롱",
+      "discovery_url": "https://jungkwanjang.kr/products/view.do?id=1652&ref_id=1119",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "known",
+            "values": [
+              "에브리타임샷스트롱",
+              "에브리타임 샷 스트롱"
+            ]
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "not_in_page",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      },
+      "label_provenance": {
+        "type": "manual_primary_visible_text_review_before_model_measurement",
+        "source_sha256": "348f8dc7bcbd597fdab8d1261880f6185b50d96dfce44de7c188517c76683f66",
+        "collected_at": "2026-11-10T16:06:34.693158+00:00",
+        "source_url": "https://jungkwanjang.kr/products/view.do?id=1652&ref_id=1119",
+        "observations_file": "work/verification/2026-11-11-stage0-observation-notes.json",
+        "scope": "Collector-visible HTML text only; image content was not labelled. Footer company alone does not establish manufacturer. Registration no-result is never used as a negative label."
+      }
+    },
+    {
+      "id": "kgc-387",
+      "site_id": "kgc",
+      "url": "https://jungkwanjang.kr/products/view.do?id=387&ref_id=317",
+      "expected_display_name": "에브리타임",
+      "discovery_url": "https://jungkwanjang.kr/products/view.do?id=387&ref_id=317",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "known",
+            "values": [
+              "에브리타임"
+            ]
+          },
+          "manufacturer": {
+            "status": "known",
+            "values": [
+              "(주)한국인삼공사"
+            ]
+          },
+          "report_number": {
+            "status": "not_in_page",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      },
+      "label_provenance": {
+        "type": "manual_primary_visible_text_review_before_model_measurement",
+        "source_sha256": "68b7a8249ef4ef930f36ea774ffb6225ddc0227f433b653f66723f8cb450ac6e",
+        "collected_at": "2026-11-10T16:06:35.012386+00:00",
+        "source_url": "https://jungkwanjang.kr/products/view.do?id=387&ref_id=317",
+        "observations_file": "work/verification/2026-11-11-stage0-observation-notes.json",
+        "scope": "Collector-visible HTML text only; image content was not labelled. Footer company alone does not establish manufacturer. Registration no-result is never used as a negative label."
+      }
+    },
+    {
+      "id": "kgc-416",
+      "site_id": "kgc",
+      "url": "https://jungkwanjang.kr/products/view.do?id=416&ref_id=342",
+      "expected_display_name": "홍삼정",
+      "discovery_url": "https://jungkwanjang.kr/products/view.do?id=416&ref_id=342",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "known",
+            "values": [
+              "홍삼정"
+            ]
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "not_in_page",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      },
+      "label_provenance": {
+        "type": "manual_primary_visible_text_review_before_model_measurement",
+        "source_sha256": "085cbbcbae00c9fb4a2238db012e16cc6483cb3910c38d5e9853c2845f0f562a",
+        "collected_at": "2026-11-10T16:06:35.296129+00:00",
+        "source_url": "https://jungkwanjang.kr/products/view.do?id=416&ref_id=342",
+        "observations_file": "work/verification/2026-11-11-stage0-observation-notes.json",
+        "scope": "Collector-visible HTML text only; image content was not labelled. Footer company alone does not establish manufacturer. Registration no-result is never used as a negative label."
+      }
+    },
+    {
+      "id": "er-15",
+      "site_id": "er_hana",
+      "url": "https://www.er-hana.com/product/detail.html?product_no=15",
+      "expected_display_name": "이알하나",
+      "discovery_url": "https://www.er-hana.com/",
+      "cohort": "regression_seed",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "known",
+            "values": [
+              "이알하나 (ER Hana®)",
+              "ERr731® 여성 갱년기영양제"
+            ]
+          },
+          "manufacturer": {
+            "status": "known",
+            "values": [
+              "(주)서흥"
+            ]
+          },
+          "report_number": {
+            "status": "known",
+            "values": [
+              "200400200062002"
+            ]
+          }
+        },
+        "official_registration": {
+          "status": "known",
+          "report_numbers": [
+            "200400200062002"
+          ]
+        }
+      },
+      "label_provenance": {
+        "type": "manual_primary_visible_text_review_before_model_measurement",
+        "source_sha256": "64e2bdf9657cc4768872e3be9a29f82eca41fec6c3f7124b4e479e84ee3da394",
+        "collected_at": "2026-11-10T16:06:36.767841+00:00",
+        "source_url": "https://www.er-hana.com/product/detail.html?product_no=15",
+        "observations_file": "work/verification/2026-11-11-stage0-observation-notes.json",
+        "scope": "Collector-visible HTML text only; image content was not labelled. Footer company alone does not establish manufacturer. Registration no-result is never used as a negative label.",
+        "official_reference_artifact": "work/verification/2026-11-10-m1-structured-final-url.json",
+        "official_reference_note": "Previously observed live official record, regression seed only, not blind holdout."
+      }
+    },
+    {
+      "id": "er-56",
+      "site_id": "er_hana",
+      "url": "https://www.er-hana.com/product/detail.html?product_no=56",
+      "expected_display_name": "면역 LF300",
+      "discovery_url": "https://www.er-hana.com/",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "known",
+            "values": [
+              "면역 LF300 온가족 영양제"
+            ]
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "not_in_page",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      },
+      "label_provenance": {
+        "type": "manual_primary_visible_text_review_before_model_measurement",
+        "source_sha256": "e7ee25847e506b807b77bedd5875c1989efabc30906cdd6f9d29dc5ac7ec4b03",
+        "collected_at": "2026-11-10T16:06:37.604972+00:00",
+        "source_url": "https://www.er-hana.com/product/detail.html?product_no=56",
+        "observations_file": "work/verification/2026-11-11-stage0-observation-notes.json",
+        "scope": "Collector-visible HTML text only; image content was not labelled. Footer company alone does not establish manufacturer. Registration no-result is never used as a negative label."
+      }
+    },
+    {
+      "id": "ssg-c1000",
+      "site_id": "ssg",
+      "url": "https://www.ssg.com/item/itemView.ssg?itemId=1000049983642",
+      "expected_display_name": "고려은단 비타민C 1000",
+      "discovery_url": "https://www.ssg.com/item/itemView.ssg?itemId=1000049983642",
+      "cohort": "regression_seed",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "ssg-bcomplex",
+      "site_id": "ssg",
+      "url": "https://www.ssg.com/item/itemView.ssg?itemId=1000039562651",
+      "expected_display_name": "비타민B 컴플렉스",
+      "discovery_url": "https://www.ssg.com/item/itemView.ssg?itemId=1000039562651",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "ssg-collagen",
+      "site_id": "ssg",
+      "url": "https://www.ssg.com/item/itemView.ssg?itemId=1000205544265",
+      "expected_display_name": "어린 피쉬콜라겐 비오틴 비타민C",
+      "discovery_url": "https://www.ssg.com/item/itemView.ssg?itemId=1000205544265",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "ssg-multivitamin",
+      "site_id": "ssg",
+      "url": "https://www.ssg.com/item/itemView.ssg?itemId=1000337313465",
+      "expected_display_name": "고려은단 멀티비타민 올인원",
+      "discovery_url": "https://www.ssg.com/disp/category.ssg?dispCtgId=6000224102",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "gs-womanpack",
+      "site_id": "gs",
+      "url": "https://www.gsshop.com/prd/prd.gs?prdid=1106571940",
+      "expected_display_name": "리포데이 올인원 우먼팩",
+      "discovery_url": "https://www.gsshop.com/prd/prd.gs?prdid=1106571940",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "known",
+            "values": [
+              "올인원 우먼팩",
+              "리포데이 올인원 우먼팩"
+            ]
+          },
+          "manufacturer": {
+            "status": "known",
+            "values": [
+              "코스맥스엔비티(주)"
+            ]
+          },
+          "report_number": {
+            "status": "not_in_page",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      },
+      "label_provenance": {
+        "type": "manual_primary_visible_text_review_before_model_measurement",
+        "source_sha256": "d327a58efdcf37052ab6857af6c0df5a975081604e88e5dcb33b1d26bee39e55",
+        "collected_at": "2026-11-10T16:06:39.032846+00:00",
+        "source_url": "https://www.gsshop.com/prd/prd.gs?prdid=1106571940",
+        "observations_file": "work/verification/2026-11-11-stage0-observation-notes.json",
+        "scope": "Collector-visible HTML text only; image content was not labelled. Footer company alone does not establish manufacturer. Registration no-result is never used as a negative label."
+      }
+    },
+    {
+      "id": "gs-lutein",
+      "site_id": "gs",
+      "url": "https://www.gsshop.com/prd/prd.gs?prdid=98944808",
+      "expected_display_name": "퍼니트 리얼 루테인 알티지 오메가3",
+      "discovery_url": "https://www.gsshop.com/prd/prd.gs?prdid=98944808&lsectid=1660617&sectid=1660617",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "known",
+            "values": [
+              "리얼 루테인 알티지 오메가3",
+              "퍼니트 리얼 루테인 알티지 오메가3"
+            ]
+          },
+          "manufacturer": {
+            "status": "known",
+            "values": [
+              "(주)유니쎌팜"
+            ]
+          },
+          "report_number": {
+            "status": "not_in_page",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      },
+      "label_provenance": {
+        "type": "manual_primary_visible_text_review_before_model_measurement",
+        "source_sha256": "02b4a4eea6b6f9b6dea19b69d61245162e9e05db606f4a3569650e11be077f1d",
+        "collected_at": "2026-11-10T16:06:39.958579+00:00",
+        "source_url": "https://www.gsshop.com/prd/prd.gs?prdid=98944808",
+        "observations_file": "work/verification/2026-11-11-stage0-observation-notes.json",
+        "scope": "Collector-visible HTML text only; image content was not labelled. Footer company alone does not establish manufacturer. Registration no-result is never used as a negative label."
+      }
+    },
+    {
+      "id": "gs-daypack",
+      "site_id": "gs",
+      "url": "https://www.gsshop.com/prd/prd.gs?prdid=1036824485",
+      "expected_display_name": "데이팩 올인원 한포 비타민",
+      "discovery_url": "https://www.gsshop.com/prd/prd.gs?prdid=1036824485&lsectid=1660614&sectid=1660614",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "known",
+            "values": [
+              "데이팩 올인원",
+              "데이팩 올인원 한포 비타민"
+            ]
+          },
+          "manufacturer": {
+            "status": "known",
+            "values": [
+              "콜마비앤에이치(주)음성공장"
+            ]
+          },
+          "report_number": {
+            "status": "not_in_page",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      },
+      "label_provenance": {
+        "type": "manual_primary_visible_text_review_before_model_measurement",
+        "source_sha256": "3910a1069bada8af8d31cf87980f15ad60dea2241ec387a29417ed68dc54553f",
+        "collected_at": "2026-11-10T16:06:40.739353+00:00",
+        "source_url": "https://www.gsshop.com/prd/prd.gs?prdid=1036824485",
+        "observations_file": "work/verification/2026-11-11-stage0-observation-notes.json",
+        "scope": "Collector-visible HTML text only; image content was not labelled. Footer company alone does not establish manufacturer. Registration no-result is never used as a negative label."
+      }
+    },
+    {
+      "id": "gs-gnm-allinone",
+      "site_id": "gs",
+      "url": "https://m.gsshop.com/prd/prd.gs?prdid=1025115352",
+      "expected_display_name": "GNM 올인원 뉴트리션 멀티비타민",
+      "discovery_url": "https://m.gsshop.com/prd/prd.gs?prdid=1025115352",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "known",
+            "values": [
+              "GNM 올인원 뉴트리션 멀티비타민",
+              "올인원 뉴트리션 멀티비타민"
+            ]
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "not_in_page",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      },
+      "label_provenance": {
+        "type": "manual_primary_visible_text_review_before_model_measurement",
+        "source_sha256": "5457c12860c46654cdf39335c09e73be183d71163c260d9b64e02a875df1f082",
+        "collected_at": "2026-11-10T16:06:41.206384+00:00",
+        "source_url": "https://m.gsshop.com/prd/prd.gs?prdid=1025115352",
+        "observations_file": "work/verification/2026-11-11-stage0-observation-notes.json",
+        "scope": "Collector-visible HTML text only; image content was not labelled. Footer company alone does not establish manufacturer. Registration no-result is never used as a negative label."
+      }
+    },
+    {
+      "id": "gs-gnm-eye",
+      "site_id": "gs",
+      "url": "https://m.gsshop.com/prd/prd.gs?prdid=22723308",
+      "expected_display_name": "GNM 건조한 눈엔 루테인오메가3",
+      "discovery_url": "https://m.gsshop.com/prd/prd.gs?prdid=22723308&gsid=srcheshop-result",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "known",
+            "values": [
+              "GNM 건조한 눈엔 루테인오메가3",
+              "건조한 눈엔 루테인오메가3"
+            ]
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "not_in_page",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      },
+      "label_provenance": {
+        "type": "manual_primary_visible_text_review_before_model_measurement",
+        "source_sha256": "8036975aea0dc00c0b09e4bafd4ba8a7a77ebb2c20f3e334f2bae3c5a1cdf3ec",
+        "collected_at": "2026-11-10T16:06:41.685285+00:00",
+        "source_url": "https://m.gsshop.com/prd/prd.gs?prdid=22723308",
+        "observations_file": "work/verification/2026-11-11-stage0-observation-notes.json",
+        "scope": "Collector-visible HTML text only; image content was not labelled. Footer company alone does not establish manufacturer. Registration no-result is never used as a negative label."
+      }
+    }
+  ],
+  "limitations": [
+    "4 previously observed regression seeds; 16 newly discovered URL cases, not a blind external benchmark.",
+    "Discovery titles identify URLs only and are not identity ground truth.",
+    "Unknown labels remain unjudged; an API no-result is not a negative registration label.",
+    "No failure-dependent replacements after freeze.",
+    "HTML-only collection; no new OCR or JavaScript collector."
+  ],
+  "parent_manifest_sha256": "a6abedfbbd84a46a569f717fe42e6e60348661c7717b3885b4fb9e556ec091af",
+  "annotation_policy": {
+    "url_selection_unchanged": true,
+    "labels_frozen_before_configured_key_run": true,
+    "official_registration_known": 1,
+    "official_registration_unknown": 19,
+    "missing_html_labels_stay_unknown": true,
+    "case_name_values": "Explicit product heading/name-cell or complete distinctive product name literally present in the primary page title; quantity/promotion text is not a required name component."
+  }
+}

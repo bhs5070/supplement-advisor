@@ -1,0 +1,611 @@
+{
+  "version": "m1-fixed-20-v1",
+  "frozen_at": "2026-11-10T12:35:33Z",
+  "sampling_method": "Convenience sample selected from primary vendor catalogs and retailer product search links before evaluation; not market representative.",
+  "sites": [
+    {
+      "id": "ckd",
+      "domain": "ckdhc.com"
+    },
+    {
+      "id": "kgc",
+      "domain": "jungkwanjang.kr"
+    },
+    {
+      "id": "er_hana",
+      "domain": "er-hana.com"
+    },
+    {
+      "id": "ssg",
+      "domain": "ssg.com"
+    },
+    {
+      "id": "gs",
+      "domain": "gsshop.com"
+    }
+  ],
+  "samples": [
+    {
+      "id": "ckd-284",
+      "site_id": "ckd",
+      "url": "https://www.ckdhc.com/product/productView.do?prodCode=CHC0000284",
+      "expected_display_name": "락토핏 골드 17포",
+      "discovery_url": "https://www.ckdhc.com/product/productList.do?category=CKD_CATE00000007&r=CKD_CATE00000001",
+      "cohort": "regression_seed",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "ckd-10",
+      "site_id": "ckd",
+      "url": "https://www.ckdhc.com/product/productView.do?prodCode=CHC0000010",
+      "expected_display_name": "락토핏 골드",
+      "discovery_url": "https://www.ckdhc.com/product/productList.do?category=CKD_CATE00000007&r=CKD_CATE00000001",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "ckd-59",
+      "site_id": "ckd",
+      "url": "https://www.ckdhc.com/product/productView.do?prodCode=CHC0000059",
+      "expected_display_name": "프로메가 알티지 오메가3 듀얼",
+      "discovery_url": "https://www.ckdhc.com/product/productList.do?category=CKD_CATE00000008&r=CKD_CATE00000001",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "ckd-6",
+      "site_id": "ckd",
+      "url": "https://www.ckdhc.com/product/productView.do?prodCode=CHC0000006",
+      "expected_display_name": "아이클리어",
+      "discovery_url": "https://www.ckdhc.com/product/productList.do?category=CKD_CATE00000009&r=CKD_CATE00000001",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "ckd-35",
+      "site_id": "ckd",
+      "url": "https://www.ckdhc.com/product/productView.do?prodCode=CHC0000035",
+      "expected_display_name": "종근당건강 칼슘마그네슘",
+      "discovery_url": "https://www.ckdhc.com/product/productView.do?prodCode=CHC0000035",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "kgc-1560",
+      "site_id": "kgc",
+      "url": "https://jungkwanjang.kr/products/view.do?id=1560&ref_id=1077",
+      "expected_display_name": "에브리타임 샷",
+      "discovery_url": "https://jungkwanjang.kr/products/view.do?id=1560&ref_id=1077",
+      "cohort": "regression_seed",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "kgc-1652",
+      "site_id": "kgc",
+      "url": "https://jungkwanjang.kr/products/view.do?id=1652&ref_id=1119",
+      "expected_display_name": "에브리타임샷스트롱",
+      "discovery_url": "https://jungkwanjang.kr/products/view.do?id=1652&ref_id=1119",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "kgc-387",
+      "site_id": "kgc",
+      "url": "https://jungkwanjang.kr/products/view.do?id=387&ref_id=317",
+      "expected_display_name": "에브리타임",
+      "discovery_url": "https://jungkwanjang.kr/products/view.do?id=387&ref_id=317",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "kgc-416",
+      "site_id": "kgc",
+      "url": "https://jungkwanjang.kr/products/view.do?id=416&ref_id=342",
+      "expected_display_name": "홍삼정",
+      "discovery_url": "https://jungkwanjang.kr/products/view.do?id=416&ref_id=342",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "er-15",
+      "site_id": "er_hana",
+      "url": "https://www.er-hana.com/product/detail.html?product_no=15",
+      "expected_display_name": "이알하나",
+      "discovery_url": "https://www.er-hana.com/",
+      "cohort": "regression_seed",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "known",
+            "values": [
+              "이알하나 (ER Hana®)",
+              "ERr731® 여성 갱년기영양제"
+            ]
+          },
+          "manufacturer": {
+            "status": "known",
+            "values": [
+              "(주)서흥"
+            ]
+          },
+          "report_number": {
+            "status": "known",
+            "values": [
+              "200400200062002"
+            ]
+          }
+        },
+        "official_registration": {
+          "status": "known",
+          "report_numbers": [
+            "200400200062002"
+          ]
+        }
+      },
+      "label_provenance": {
+        "type": "prior_primary_vendor_and_live_official_evidence",
+        "vendor_source_url": "https://www.er-hana.com/product/detail.html?product_no=15",
+        "prior_artifact": "work/verification/2026-11-10-m1-structured-final-url.json",
+        "note": "Known regression seed, not a blind holdout. Labels must never be injected into extraction or lookup input."
+      }
+    },
+    {
+      "id": "er-56",
+      "site_id": "er_hana",
+      "url": "https://www.er-hana.com/product/detail.html?product_no=56",
+      "expected_display_name": "면역 LF300",
+      "discovery_url": "https://www.er-hana.com/",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "ssg-c1000",
+      "site_id": "ssg",
+      "url": "https://www.ssg.com/item/itemView.ssg?itemId=1000049983642",
+      "expected_display_name": "고려은단 비타민C 1000",
+      "discovery_url": "https://www.ssg.com/item/itemView.ssg?itemId=1000049983642",
+      "cohort": "regression_seed",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "ssg-bcomplex",
+      "site_id": "ssg",
+      "url": "https://www.ssg.com/item/itemView.ssg?itemId=1000039562651",
+      "expected_display_name": "비타민B 컴플렉스",
+      "discovery_url": "https://www.ssg.com/item/itemView.ssg?itemId=1000039562651",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "ssg-collagen",
+      "site_id": "ssg",
+      "url": "https://www.ssg.com/item/itemView.ssg?itemId=1000205544265",
+      "expected_display_name": "어린 피쉬콜라겐 비오틴 비타민C",
+      "discovery_url": "https://www.ssg.com/item/itemView.ssg?itemId=1000205544265",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "ssg-multivitamin",
+      "site_id": "ssg",
+      "url": "https://www.ssg.com/item/itemView.ssg?itemId=1000337313465",
+      "expected_display_name": "고려은단 멀티비타민 올인원",
+      "discovery_url": "https://www.ssg.com/disp/category.ssg?dispCtgId=6000224102",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "gs-womanpack",
+      "site_id": "gs",
+      "url": "https://www.gsshop.com/prd/prd.gs?prdid=1106571940",
+      "expected_display_name": "리포데이 올인원 우먼팩",
+      "discovery_url": "https://www.gsshop.com/prd/prd.gs?prdid=1106571940",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "gs-lutein",
+      "site_id": "gs",
+      "url": "https://www.gsshop.com/prd/prd.gs?prdid=98944808",
+      "expected_display_name": "퍼니트 리얼 루테인 알티지 오메가3",
+      "discovery_url": "https://www.gsshop.com/prd/prd.gs?prdid=98944808&lsectid=1660617&sectid=1660617",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "gs-daypack",
+      "site_id": "gs",
+      "url": "https://www.gsshop.com/prd/prd.gs?prdid=1036824485",
+      "expected_display_name": "데이팩 올인원 한포 비타민",
+      "discovery_url": "https://www.gsshop.com/prd/prd.gs?prdid=1036824485&lsectid=1660614&sectid=1660614",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "gs-gnm-allinone",
+      "site_id": "gs",
+      "url": "https://m.gsshop.com/prd/prd.gs?prdid=1025115352",
+      "expected_display_name": "GNM 올인원 뉴트리션 멀티비타민",
+      "discovery_url": "https://m.gsshop.com/prd/prd.gs?prdid=1025115352",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    },
+    {
+      "id": "gs-gnm-eye",
+      "site_id": "gs",
+      "url": "https://m.gsshop.com/prd/prd.gs?prdid=22723308",
+      "expected_display_name": "GNM 건조한 눈엔 루테인오메가3",
+      "discovery_url": "https://m.gsshop.com/prd/prd.gs?prdid=22723308&gsid=srcheshop-result",
+      "cohort": "holdout_discovery",
+      "labels": {
+        "identity": {
+          "product_name": {
+            "status": "unknown",
+            "values": []
+          },
+          "manufacturer": {
+            "status": "unknown",
+            "values": []
+          },
+          "report_number": {
+            "status": "unknown",
+            "values": []
+          }
+        },
+        "official_registration": {
+          "status": "unknown",
+          "report_numbers": []
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "4 previously observed regression seeds; 16 newly discovered URL cases, not a blind external benchmark.",
+    "Discovery titles identify URLs only and are not identity ground truth.",
+    "Unknown labels remain unjudged; an API no-result is not a negative registration label.",
+    "No failure-dependent replacements after freeze.",
+    "HTML-only collection; no new OCR or JavaScript collector."
+  ]
+}

@@ -1,0 +1,60 @@
+name: ad-fact-check-process-recovery-test
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: advisor
+      POSTGRES_PASSWORD: recovery_test_only
+      POSTGRES_DB: advisor
+    volumes: [recovery_test_db:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U advisor -d advisor"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+  redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+  migrate:
+    build: .
+    environment: &recovery_env
+      DATABASE_URL: postgresql+psycopg://advisor:recovery_test_only@db:5432/advisor
+      REDIS_URL: redis://redis:6379/0
+      RAW_STORAGE_DIR: /data/raw
+      ATTEMPT_TIMEOUT_SECONDS: "30"
+      ANALYSIS_TIMEOUT_SECONDS: "90"
+      MAX_TOOL_CALLS: "20"
+      OPENAI_API_KEY: ""
+      FOOD_SAFETY_API_KEY: ""
+      TAVILY_API_KEY: ""
+      CLERK_SECRET_KEY: ""
+      LANGSMITH_API_KEY: ""
+    command: ["sh", "-c", "alembic upgrade head && python scripts/setup_checkpoints.py"]
+    depends_on:
+      db: {condition: service_healthy}
+  worker:
+    build: .
+    environment:
+      <<: *recovery_env
+      RECOVERY_FIXTURE_MODE: ${RECOVERY_FIXTURE_MODE:-kill}
+    command: ["python", "/recovery/recovery_test_bootstrap.py"]
+    volumes:
+      - recovery_test_raw:/data/raw
+      - ./scripts/recovery_test_bootstrap.py:/recovery/recovery_test_bootstrap.py:ro
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      redis: {condition: service_healthy}
+  beat:
+    build: .
+    environment: *recovery_env
+    command: ["celery", "-A", "supplement_advisor.celery_app:celery_app", "beat", "--loglevel=WARNING", "--schedule=/tmp/celerybeat-schedule"]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      redis: {condition: service_healthy}
+volumes:
+  recovery_test_db:
+  recovery_test_raw:
